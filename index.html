@@ -8,58 +8,102 @@
     <title>Crystal Game | Julia Dischell</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  
+
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
     <link rel="manifest" href="assets/images/site.webmanifest">
 
 </head>
-<!-- Site Header -->
-
 <header>
-    <div class="container">
+    <div class="navbar">
         <a id="logo" href="#">Julia Dischell</a>
         <nav>
-            <ul>
-                <li class="links"><a href="../Responsive-Portfolio/index.html">About</a></li>
-                <li class="links"><a href="../Responsive-Portfolio/portfolio.html">Portfolio</a></li>
-                <li id="links-last-child"><a href="../Responsive-Portfolio/contact.html">Contact</a></li>
-            </ul>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="../Responsive-Portfolio/index.html">About</a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="https://www.linkedin.com/in/juliadischell/">LinkedIn</a>
+                    <a href="assets/images/JDresume2019.pdf">Resume</a>
+                    <a href="https://github.com/JulesDisch">GitHub</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"> <a href="../Responsive-Portfolio/contact.html">Contact</a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="mailto:jmdischell@gmail.com">Email</a>
+                    <a href="tel:12158962289">Call</a>
+                </div>
+            </div>
+            <a href="../Responsive-Portfolio/portfolio.html">Portfolio</a>
         </nav>
     </div>
 </header>
 
 <body>
-     <div id="main-container" class="container">
-         <section class="main-section">
-             <h1>Portfolio</h1>
-                 <hr>
-                    <div id="game">
-                        <h2>Crystal Game</h2>  
-
-                        
-
-<body>
-
-  <h3>Number to Guess: <span id="number-to-guess"></span></h3>
-  <p>Wins: <span id="winsText"></span></p>
-  <p>Losses: <span id="lossesText"></span></p>
-
-  
-  <div id="crystals">
-  </div>
-
- 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <script type="text/javascript" src="assets/javascript/game.js">
-
-  
-
-  </script>
+    <div id="main-container" class="container">
+        <section class="main-section">
+            <h1>Portfolio</h1>
+            <hr>
+            <div id="game">
+                <div id="extra">
+                    <h2>Crystal Game</h2>
+                    <ul id="rules-area">
+                        <li> You are given a random target number at the start of the round.</li>
+                        <li> Clicking on a crystal adds a specific amount of points to your current number.</li>
+                        <li> The value of each crystal is hidden from you until you click on it.</li>
+                        <li>You win the game by matching your current number to the target number;
+                        you lose the game if your total score goes above the target number.</li>
+                        <li> Each time you win or lose a round, you have the option of playing another round. </li>
+                        <li>If you choose to play another round, you will get a new target number, and new values for
+                            each crystal.</li>
+                        <li> If you choose to stop playing, you won't get a new target number.</li>
+                        </ul>
+                </div>
+                <div class="row">
+                    <div class="column-1">
+                        <h3>Target Number: <span id="number-to-guess"></span></h3>
+                    </div>
+                    <div class="column-2">
+                        <h3>Current Number: <span id="crystal-score"></span></h3>
+                    </div>
+                    <div class="column-3">
+                        <h3>Wins: <span id="winsText"></span></h3>
+                    </div>
+                    <div class="column-4">
+                        <h3>Losses: <span id="lossesText"></span></h3>
+                    </div>
+                </div>
+                <div id="crystals">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="column-1">
+                    <a href="https://github.com/JulesDisch/Trivia-Game">Find on GitHub</a>
+                </div>
+                <div class="column-2">
+                    <a href="https://www.freepik.com/free-photos-vectors/geometric">Geometric vector created by freepik
+                        - www.freepik.com</a>
+                </div>
+        </section>
+    </div>
+    <div id="counter" class="modal">
+        <div class="modal-content">
+            <h3 id="winOrLose"></h3>
+            <button id="continue">Keep playing</button>
+            <button id="quit"> Stop playing</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js">
+    </script>
+    <footer>
+        <p>© 2019</p>
+    </footer>
 </body>
+
 </html>
-
-
- 
