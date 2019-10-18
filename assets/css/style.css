@@ -133,8 +133,7 @@ nav a:hover:not(.active) {
   display: block;
 }
 
-h1,
-h2,
+h1,h2,
 h3 {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 700;

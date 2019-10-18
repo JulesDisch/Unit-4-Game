@@ -27,7 +27,6 @@ $(document).ready(function () {
         crystalNumbers();
         counter = 0;
     }
-
     // create the number options for the crystals that don't repeat
     function crystalNumbers() {
         var numberOptions = new Array(4);
