@@ -1,6 +1,5 @@
 $(document).ready(function () {
     // global variables
-
     var crystalPics = [
         "octogon.png", "square.png", "quartz.png", "teardropped.png"];
     var counter = 0;
