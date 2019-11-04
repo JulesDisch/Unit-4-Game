@@ -26,10 +26,10 @@ body {
 }
     
 #main-container {
-  padding-top: 15%;
-  padding-bottom: 15%;
+  padding-top: 80px;
+  padding-bottom: 80px;
   height: 100%;
-} 
+}  
   
 .main-section {
   text-align: left;
